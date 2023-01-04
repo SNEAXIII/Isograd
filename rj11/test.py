@@ -40,10 +40,13 @@ class liste_parsee:
         self.longueur = maxi - mini
 
     def est_possible(self):
+        cables_ordones = ""
         table_des_cables = [0 for _ in range(self.nombre_cable)]
         occurrence = [0 for _ in range(self.longueur)]
         for elem in self.liste_parsee:
-            #
+            for cable in table_des_cables:
+                if cable == 0:
+                    #
             for index in range(elem[0], elem[1]):
                 occurrence[index] += 1
                 if occurrence[index] == self.nombre_cable:
