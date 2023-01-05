@@ -12,7 +12,7 @@ table_requetes = [[int(elem.split()[0]), int(elem.split()[1])] for elem in lines
 print(table_requetes)
 table_des_cable = [[] for _ in range(int(lines[0].split(" ")[0]))]
 print(table_des_cable)
-
+rendu_final = ""
 
 for (debut,fin) in table_requetes:
     valide = True
