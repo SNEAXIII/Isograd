@@ -14,9 +14,11 @@ table_des_cable = [[] for _ in range(int(lines[0].split(" ")[0]))]
 print(table_des_cable)
 rendu_final = ""
 
-for (debut,fin) in table_requetes:
+for requete in table_requetes:
+    debut,fin = requete[0],requete[1]
     valide = True
-    num_cable = 0
+    for index in range(len(table_des_cable)):
+        table_des_cable[i]
 
 # liste_exemple = [f"{a} {a + 1}" for a in range(0, 20)]
 # liste_exemple[0] = ""
